@@ -1,0 +1,58 @@
+body {
+    direction: rtl;
+}
+
+.some_urles .unite_url i {
+    transform: rotate(270deg);
+}
+
+.form-select {
+    background-position: left .75rem center;
+}
+
+.back-to-top {
+    left: 30px;
+    right: auto;
+}
+
+.left_side::after {
+    right: -32px;
+    left: auto;
+}
+
+.pattern {
+    right: -45px;
+    left: auto;
+}
+
+.contact_us .mobile_div img {
+    transform: rotate(260deg);
+}
+
+.bi-caret-right-fill::before {
+    transform: rotate(180deg);
+}
+
+
+@media (max-width: 1024px) {
+    .header__menu--wrapper {
+        left: auto;
+        right: 0px;
+        transform: translateX(100%);
+    }
+
+    .header__menu--navigation.show_menu .header__menu--wrapper {
+        transform: translateX(0);
+    }
+
+    .header__menu--navigation {
+        right: 0;
+        left: auto;
+        transform: translateX(100%);
+    }
+
+    .header__menu--navigation.show_menu {
+        transform: translateX(0);
+    }
+
+}
