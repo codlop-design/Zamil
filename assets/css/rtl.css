@@ -33,6 +33,10 @@ body {
     transform: rotate(180deg);
 }
 
+.dropdown-menu.show{
+    left: -110px !important;
+    right: auto !important;
+}
 
 @media (max-width: 1024px) {
     .header__menu--wrapper {
@@ -56,3 +60,4 @@ body {
     }
 
 }
+

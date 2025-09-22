@@ -114,11 +114,14 @@ var swiper = new Swiper(".Certification_swiper", {
     spaceBetween: 30,
     centeredSlides: true,
     loop: true,
+    slideToClickedSlide: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
+
 });
+
 
 // our_partner_swiper
 var swiper = new Swiper(".our_partner_swiper", {
@@ -139,17 +142,47 @@ var swiper = new Swiper(".our_partner_swiper", {
 
 // our_partner_swiper
 var swiper = new Swiper(".Major_Clients", {
-    slidesPerView: 9,
-    slidesPerGroup: 9,
+    slidesPerView: 9, // الافتراضي للشاشات الكبيرة جداً
     spaceBetween: 10,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
         type: "bullets",
     },
+    breakpoints: {
+        1450: {
+            slidesPerView: 9,
+            slidesPerGroup: 9,
+            spaceBetween: 50,
+        },
+        1024: {
+            slidesPerView: 6,
+            slidesPerGroup: 6,
+            spaceBetween: 40,
+        },
+        768: {
+            slidesPerView: 5,
+            slidesPerGroup: 5,
+            spaceBetween: 30,
+        },
+        576: {
+            slidesPerView: 5,
+            slidesPerGroup: 4,
+            spaceBetween: 20,
+        },
+        450: {
+            slidesPerView: 4,
+            slidesPerGroup: 3,
+            spaceBetween: 15,
+        },
+        0: { // أقل من 450
+            slidesPerView: 3,
+            slidesPerGroup: 2,
+            spaceBetween: 10,
+        },
+    },
     loop: false,
 });
-
 
 document.querySelectorAll(".btn_toggle").forEach((btn) => {
     const dropdown = btn.querySelector(".mobile_dropdowen");
@@ -163,11 +196,10 @@ document.querySelectorAll(".btn_toggle").forEach((btn) => {
             dropdown.style.maxHeight = dropdown.scrollHeight + "px";
             dropdown.addEventListener("transitionend", function handler() {
                 if (dropdown.classList.contains("active")) {
-                    dropdown.style.maxHeight = "none"; 
+                    dropdown.style.maxHeight = "none";
                 }
                 dropdown.removeEventListener("transitionend", handler);
             });
         }
     });
 });
-
