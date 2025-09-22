@@ -805,6 +805,7 @@ hr {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
+  line-height: 150%;
 }
 
 .trade_img {
@@ -1193,6 +1194,7 @@ input[type=number] {
 .flex_about {
   display: flex;
   align-items: center;
+  gap: 15px;
 }
 
 .left_side {
@@ -1202,13 +1204,14 @@ input[type=number] {
   flex-direction: column;
   gap: 15px;
   position: relative;
+  padding-left: 40px;
 }
 
 .left_side::after {
   position: absolute;
   width: 2px;
   height: 87%;
-  left: -32px;
+  left: 13px;
   bottom: 0;
   content: "";
   background-image: linear-gradient(to bottom, #C6EAAE, #ADADAD);
@@ -1219,7 +1222,7 @@ input[type=number] {
   height: 60px;
   width: 30px;
   position: absolute;
-  left: -45px;
+  left: 0;
 }
 
 .h1_colored {
@@ -1315,6 +1318,7 @@ input[type=number] {
 
 .map_div iframe {
   width: 100%;
+  height: 400px;
 }
 
 .flex_contact {
@@ -1330,6 +1334,7 @@ input[type=number] {
 
 .left_contact_img img {
   width: 100%;
+  object-fit: contain;
 }
 
 .flex_contact .right_part {
@@ -1411,7 +1416,7 @@ select.form-select option:checked {
 }
 
 .ref_logo_partner {
-  width: 150px;
+  width: 240px;
   height: 150px;
   object-fit: contain;
 }
@@ -1425,6 +1430,14 @@ select.form-select option:checked {
 .our_partner_swiper .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
+}
+
+.our_partner_swiper .swiper-wrapper {
+  padding: 0px 0px 30px 0px;
+}
+
+.our_partner_swiper .swiper-slide {
+  width: fit-content !important;
 }
 
 .Partener_h1 {
@@ -1688,9 +1701,46 @@ select.form-select option:checked {
     width: 500px;
     min-width: 500px;
   }
+
+  .left_side {
+    width: 600px;
+    min-width: 600px;
+  }
+
+  .h1_colored {
+    font-size: 27px;
+  }
+
+  .left_side h2 {
+    font-size: 20px;
+  }
+
+  .trad_titels {
+    font-size: 16px;
+  }
+
+  .left_side::after {
+    height: 88%;
+  }
+
+  .our_partner_section {
+    gap: 12px;
+  }
+
+  .Partener_h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  .map_div iframe {
+    height: 350px;
+  }
+
+  .left_contact_img {
+    width: 400px;
+    min-width: 400px;
+  }
 }
-
-
 
 @media (max-width:1024px) {
   .center_menue {
@@ -1895,6 +1945,38 @@ select.form-select option:checked {
   .Excellence_div .trad_titels {
     text-align: center;
   }
+
+  .icon_div img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon_div {
+    padding: 12px;
+  }
+
+  .about_div h1 {
+    font-size: 20px;
+  }
+
+  .trad_titels {
+    font-size: 16px;
+  }
+
+  .btn_styles.about_btn {
+    padding: 8px 35px;
+
+    font-size: 20px;
+  }
+
+  .up_details div {
+    font-size: 15px;
+  }
+
+  .up_details {
+    gap: 5px;
+  }
+
 }
 
 @media (max-width:992px) {
@@ -1909,9 +1991,71 @@ select.form-select option:checked {
   .trade_img img {
     height: 300px;
   }
+
+  .trad_titels {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .icon_div img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .about_div h1 {
+    font-size: 18px;
+  }
+
+  .btn_styles.about_btn {
+    padding: 8px 20px;
+    font-size: 18px;
+  }
+
+  .mb-5 {
+    margin-bottom: 2rem !important;
+  }
+
+  .contact_img img {
+    height: 370px;
+
+  }
+
+  .left_contact_img {
+    width: 300px;
+    min-width: 300px;
+  }
 }
 
-@media (max-width:900px) {}
+@media (max-width:900px) {
+  .left_side {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .left_side::after {
+    height: 89%;
+  }
+
+  .flex_about {
+    flex-direction: column;
+  }
+
+  .h1_colored {
+    font-size: 21px;
+  }
+
+  .left_side h2 {
+    font-size: 18px;
+  }
+
+  .trad_titels {
+    font-size: 16px;
+  }
+
+  .left_side::after {
+    height: 85%;
+  }
+}
 
 @media (max-width:800px) {
   .flex_trade {
@@ -1988,6 +2132,76 @@ select.form-select option:checked {
   .two_parts {
     padding: 20px;
   }
+
+  .left_side::after {
+    height: 86%;
+  }
+
+  .right_side img {
+    height: 300px;
+  }
+
+  .contact_img img {
+    height: 350px;
+  }
+
+  .trad_titels {
+    font-size: 15px;
+  }
+
+  .icon_div {
+    padding: 11px;
+  }
+
+  .icon_div img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .btn_styles.about_btn {
+    padding: 6px 10px;
+    font-size: 17px;
+  }
+
+  .about_div h1 {
+    font-size: 17px;
+  }
+
+  .about_div {
+    padding: 15px 15px 20px 15px;
+    gap: 8px;
+  }
+
+  .ref_logo_partner.partner {
+    width: 160px;
+    height: 100px;
+  }
+
+  .flex_contact {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .left_contact_img {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .left_contact_img img {
+    height: 350px;
+  }
+
+  .map_div iframe {
+    height: 300px;
+  }
+
+  .up_details h1 {
+    font-size: 18px;
+  }
+
+  .ref_phone {
+    font-size: 16px;
+  }
 }
 
 @media (max-width:700px) {
@@ -2008,6 +2222,30 @@ select.form-select option:checked {
     font-size: 16px;
   }
 }
+
+@media (max-width:650px) {
+  .h1_colored {
+    font-size: 19px;
+  }
+
+  .trad_titels {
+    font-size: 15px;
+  }
+
+  .left_side h2 {
+    font-size: 17px;
+  }
+
+  .left_side::after {
+    height: 85%;
+  }
+
+  .ref_logo_partner.partner {
+    width: 132px;
+    height: 80px;
+  }
+}
+
 
 @media (max-width:600px) {
   .Certification_img {
@@ -2135,6 +2373,45 @@ select.form-select option:checked {
     min-width: 30px;
     height: 30px;
   }
+
+  .right_side img {
+    height: 260px;
+  }
+
+  .pattern {
+    height: 50px;
+    width: 25px;
+  }
+
+  .left_side::after {
+    height: 86%;
+    left: 11px;
+  }
+
+  .h1_colored {
+    font-size: 18px;
+  }
+
+  .trad_titels {
+    font-size: 14px;
+  }
+
+  .left_side h2 {
+    font-size: 16px;
+  }
+
+  .contact_img img {
+    height: 300px;
+  }
+
+  .about_div h1 {
+    font-size: 16px;
+  }
+
+  .ref_logo_partner.partner {
+    width: 120px;
+    height: 75px;
+  }
 }
 
 @media (max-width:500px) {
@@ -2187,6 +2464,27 @@ select.form-select option:checked {
   .Units_details {
     gap: 10px;
   }
+
+  .left_side::after {
+    height: 89%;
+    left: 11px;
+  }
+}
+
+@media (max-width:458px) {
+
+  .h1_colored {
+    font-size: 16px;
+  }
+
+  .left_side h2 {
+    font-size: 15px;
+  }
+
+  .left_side {
+    gap: 6px;
+  }
+
 }
 
 @media (max-width:450px) {
@@ -2230,7 +2528,7 @@ select.form-select option:checked {
   }
 
   .trad_titels {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .flex_trade {
@@ -2275,6 +2573,18 @@ select.form-select option:checked {
   .Excellence_div h2 {
     font-size: 16px;
   }
+
+  .right_side img {
+    height: 200px;
+  }
+
+  .map_div iframe {
+    height: 270px;
+  }
+
+  .left_contact_img img {
+    height: 300px;
+  }
 }
 
 @media (max-width:400px) {
@@ -2316,7 +2626,14 @@ select.form-select option:checked {
   .mobile_dropdowen.active .main_titel {
     font-size: 16px;
   }
-  
+
+  .h1_colored {
+    font-size: 15px;
+  }
+
+  .left_side h2 {
+    font-size: 14px;
+  }
 }
 
 @media (max-width:375px) {
@@ -2405,6 +2722,40 @@ select.form-select option:checked {
 
   .ref_phone {
     font-size: 15px;
+  }
+
+  .left_side {
+    padding-left: 35px;
+  }
+
+  .pattern {
+    height: 40px;
+    width: 20px;
+  }
+
+  .left_side::after {
+    height: 93%;
+    left: 8px;
+  }
+
+  .right_side img {
+    height: 100%;
+  }
+
+  .contact_img img {
+    height: 100%;
+  }
+
+  .about_div h1 {
+    font-size: 15px;
+  }
+
+  .map_div iframe {
+    height: 100%;
+  }
+
+  .left_contact_img img {
+    height: 100%;
   }
 }
 

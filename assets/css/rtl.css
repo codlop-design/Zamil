@@ -33,9 +33,24 @@ body {
     transform: rotate(180deg);
 }
 
-.dropdown-menu.show{
+.dropdown-menu.show {
     left: -110px !important;
     right: auto !important;
+}
+
+.left_side {
+    padding-right: 40px;
+    padding-left: auto;
+}
+
+.left_side::after {
+    right: 13px;
+    left: auto;
+}
+
+.pattern {
+    right: 0;
+    left: auto;
 }
 
 @media (max-width: 1024px) {
@@ -61,3 +76,16 @@ body {
 
 }
 
+@media (max-width:576px) {
+    .left_side::after {
+        right: 11px;
+        left: auto;
+    }
+}
+
+@media (max-width:375px) {
+    .left_side::after {
+        right: 8px;
+        left: auto;
+    }
+}

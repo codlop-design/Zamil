@@ -137,12 +137,13 @@ var swiper = new Swiper(".our_partner_swiper", {
         clickable: true,
         dynamicBullets: true,
     },
+
 });
 
 
 // our_partner_swiper
 var swiper = new Swiper(".Major_Clients", {
-    slidesPerView: 9, // الافتراضي للشاشات الكبيرة جداً
+    slidesPerView: 9,
     spaceBetween: 10,
     pagination: {
         el: ".swiper-pagination",
@@ -183,6 +184,9 @@ var swiper = new Swiper(".Major_Clients", {
     },
     loop: false,
 });
+
+
+// mobil_dropdowen
 
 document.querySelectorAll(".btn_toggle").forEach((btn) => {
     const dropdown = btn.querySelector(".mobile_dropdowen");
