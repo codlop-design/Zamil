@@ -255,7 +255,7 @@ hr {
 }
 
 .mb-5 {
-  margin-bottom: 18px;
+  margin-bottom: 18px !important;
 }
 
 /* start_header */
@@ -1371,7 +1371,6 @@ select.form-select option:checked {
   font-size: 18px;
   color: #143A13;
   font-weight: 500;
-  padding-bottom: 15px;
   height: 43px;
 }
 
@@ -1389,6 +1388,7 @@ select.form-select option:checked {
   display: flex;
   align-items: center;
   gap: 7px;
+  flex-wrap: wrap;
 }
 
 .flex_content img {
@@ -1977,6 +1977,10 @@ select.form-select option:checked {
     gap: 5px;
   }
 
+  .flex_content .span_tow {
+    font-size: 15px;
+  }
+
 }
 
 @media (max-width:992px) {
@@ -2023,6 +2027,11 @@ select.form-select option:checked {
   .left_contact_img {
     width: 300px;
     min-width: 300px;
+  }
+
+  .label_style {
+    font-size: 17px;
+    height: 36px;
   }
 }
 
@@ -2412,6 +2421,15 @@ select.form-select option:checked {
     width: 120px;
     height: 75px;
   }
+
+  .label_style {
+    font-size: 16px;
+    height: 30px;
+  }
+
+  .flex_content .span_tow {
+    font-size: 14px;
+  }
 }
 
 @media (max-width:500px) {
@@ -2468,6 +2486,10 @@ select.form-select option:checked {
   .left_side::after {
     height: 89%;
     left: 11px;
+  }
+
+  .flex_content .span_one {
+    font-size: 14px;
   }
 }
 
@@ -2585,6 +2607,23 @@ select.form-select option:checked {
   .left_contact_img img {
     height: 300px;
   }
+
+  .label_style {
+    font-size: 15px;
+  }
+
+  .mobile_dropdowen.active .main_titel {
+    font-size: 15px;
+  }
+
+  .div_col .ref_Business {
+    font-size: 14px;
+  }
+
+  .div_col .ref_Business img {
+    width: 18px;
+    height: 18px;
+}
 }
 
 @media (max-width:400px) {
