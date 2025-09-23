@@ -53,6 +53,10 @@ body {
     left: auto;
 }
 
+.trad_titels.about_titel {
+  text-align: right;
+}
+
 @media (max-width: 1024px) {
     .header__menu--wrapper {
         left: auto;

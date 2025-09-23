@@ -1139,6 +1139,10 @@ input[type=number] {
   font-size: 16px;
 }
 
+.ul_content a:hover {
+  color: #ffff;
+}
+
 .main_footer_title {
   margin: 0;
   color: #fff;
@@ -1261,6 +1265,7 @@ input[type=number] {
 
 .trad_titels.about_titel {
   color: #2C2B2C;
+  text-align: left;
 }
 
 .right_side {
@@ -2002,7 +2007,7 @@ select.form-select option:checked {
   .ref_logo.center {
     display: block;
   }
-  
+
 }
 
 @media (max-width:992px) {
@@ -2831,4 +2836,9 @@ select.form-select option:checked {
   .trade_img img {
     height: 100%;
   }
+
+  /* .ref_logo_partner.partner {
+    width: 100px;
+    height: 75px;
+  } */
 }
