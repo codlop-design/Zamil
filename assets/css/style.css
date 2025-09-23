@@ -799,6 +799,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  align-items: flex-start;
 }
 
 .trad_titels {
@@ -874,6 +875,14 @@ hr {
   width: 15px;
   height: 15px;
 }
+
+.lg-close {
+  display: block !important;
+  color: #fff !important;
+  font-size: 28px !important;
+  z-index: 99999 !important;
+}
+
 
 /* end_Our_Certification */
 
@@ -1606,6 +1615,10 @@ select.form-select option:checked {
   left: 38px !important;
 }
 
+.ref_logo.center {
+  display: none;
+}
+
 /* my_responsive */
 
 @media (max-width:1400px) {}
@@ -1981,6 +1994,15 @@ select.form-select option:checked {
     font-size: 15px;
   }
 
+  .ref_logo.defult .white_logo,
+  .ref_logo.defult .colored_logo {
+    display: none;
+  }
+
+  .ref_logo.center {
+    display: block;
+  }
+  
 }
 
 @media (max-width:992px) {
@@ -2466,7 +2488,7 @@ select.form-select option:checked {
   }
 
   .ref_logo img {
-    height: 40px;
+    height: 45px;
   }
 
   .Units_content {
@@ -2681,9 +2703,7 @@ select.form-select option:checked {
     padding-right: 15px;
   }
 
-  .ref_logo img {
-    height: 30px;
-  }
+
 
   .contact_us .mobile_div {
     padding: 4px;
