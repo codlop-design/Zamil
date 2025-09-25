@@ -137,11 +137,68 @@ var swiper = new Swiper(".our_partner_swiper", {
         clickable: true,
         dynamicBullets: true,
     },
+    breakpoints: {
+        1200: { // من 1200px وطالع
+            slidesPerView: 6,
+            slidesPerGroup: 6,
+            grid: {
+                rows: 4,
+                fill: "row"
+            },
+            spaceBetween: 10,
+        },
+        992: { // من 992px لحد 1199px
+            slidesPerView: 5,
+            slidesPerGroup: 5,
+            grid: {
+                rows: 4,
+                fill: "row"
+            },
+            spaceBetween: 10,
+        },
+        768: { // من 768px لحد 991px
+            slidesPerView: 5,
+            slidesPerGroup: 5,
+            grid: {
+                rows: 4,
+                fill: "row"
+            },
+            spaceBetween: 8,
+        },
+        576: { // من 576px لحد 767px
+            slidesPerView: 5,
+            slidesPerGroup: 5,
+            grid: {
+                rows: 4,
+                fill: "row"
+            },
+            spaceBetween: 8,
+        },
 
+        450: { // من 576px لحد 767px
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+            grid: {
+                rows: 4,
+                fill: "row"
+            },
+            spaceBetween: 8,
+        },
+        320: { // من 320px لحد 575px
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            grid: {
+                rows: 4,
+                fill: "row"
+            },
+            spaceBetween: 5,
+        },
+    },
 });
 
 
-// our_partner_swiper
+
+// Major_Clients_swiper
 var swiper = new Swiper(".Major_Clients", {
     slidesPerView: 9,
     spaceBetween: 10,

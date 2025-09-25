@@ -1450,9 +1450,9 @@ select.form-select option:checked {
   padding: 0px 0px 30px 0px;
 }
 
-.our_partner_swiper .swiper-slide {
+/* .our_partner_swiper .swiper-slide {
   width: fit-content !important;
-}
+} */
 
 .Partener_h1 {
   margin: 0;
@@ -1673,7 +1673,11 @@ select.form-select option:checked {
   .btn_styles {
     font-size: 17px;
     padding: 6px 40px;
+  }
 
+  .ref_logo_partner {
+    width: 160px;
+    height: 100px;
   }
 }
 
@@ -2060,6 +2064,11 @@ select.form-select option:checked {
     font-size: 17px;
     height: 36px;
   }
+
+  .ref_logo_partner {
+    width: 125px;
+    height: 80px;
+  }
 }
 
 @media (max-width:900px) {
@@ -2208,10 +2217,7 @@ select.form-select option:checked {
     gap: 8px;
   }
 
-  .ref_logo_partner.partner {
-    width: 160px;
-    height: 100px;
-  }
+
 
   .flex_contact {
     flex-direction: column;
@@ -2237,6 +2243,11 @@ select.form-select option:checked {
 
   .ref_phone {
     font-size: 16px;
+  }
+
+  .ref_logo_partner {
+    width: 100px;
+    height: 80px;
   }
 }
 
@@ -2276,10 +2287,6 @@ select.form-select option:checked {
     height: 85%;
   }
 
-  .ref_logo_partner.partner {
-    width: 132px;
-    height: 80px;
-  }
 }
 
 
@@ -2442,11 +2449,6 @@ select.form-select option:checked {
 
   .about_div h1 {
     font-size: 16px;
-  }
-
-  .ref_logo_partner.partner {
-    width: 120px;
-    height: 75px;
   }
 
   .label_style {
@@ -2651,6 +2653,11 @@ select.form-select option:checked {
     width: 18px;
     height: 18px;
   }
+
+  .ref_logo_partner {
+    width: 85px;
+    height: 70px;
+  }
 }
 
 @media (max-width:400px) {
@@ -2822,10 +2829,7 @@ select.form-select option:checked {
     height: 100%;
   }
 
-  .ref_logo_partner.partner {
-    width: 110px;
-    height: 75px;
-  }
+
 }
 
 @media (max-width:320px) {
@@ -2837,8 +2841,4 @@ select.form-select option:checked {
     height: 100%;
   }
 
-  /* .ref_logo_partner.partner {
-    width: 100px;
-    height: 75px;
-  } */
 }
